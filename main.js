@@ -50,7 +50,7 @@ function atualizarNotasFinais() {
     const mediaFinal = NotasFinais();
 
     document.getElementById("MediaFinalValor").innerHTML = mediaFinal.toFixed(2);
-    document.getElementById("MediaFinalResultado").innerHTML =
+    document.getElementById("MediaFinalResultado").innerHTML = mediaFinal >= NotaMinima ? spanAprovado : spanReprovado;
         mediaFinal >= NotaMinima ? spanAprovado : spanReprovado;
 }
 
